@@ -3,7 +3,7 @@
 ## Screenshot
 ![preview](./preview.png)
 
-## Preview url: [https://](https://)
+## Preview url: [https://aron-mall-music-player-app.netlify.app/](https://aron-mall-music-player-app.netlify.app/)
 
 ## Description
 ### A music player application built as part of a javascript curriculum that I am working through.
