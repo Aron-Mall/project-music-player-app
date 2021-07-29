@@ -42,6 +42,11 @@ const Playlist = (() => {
             currentSong.play();
             toggleIcon();
             render();
+            PlayInfo.setState({
+                songsLength: songs.length,
+                isPlaying: !currentSong.paused,
+                image: songs[currentlyPlayingIndex].cover
+            })
         }
     }
 
