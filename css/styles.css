@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+    --main-bg-color: #1A1A1A;
+    --main-font-color: #FFFFFF;
+    --secondary-font-color: #AAAAAA;
+    --light-white: #EEEEEE;
+    --light-green: #33B75C;
+    --container-width: 768px;
+    --font-main-stack: 'Quicksand', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main-stack);
+    line-height: 1.5;
+}
+
+.button {
+    padding: 1rem 3.8rem;
+    border-radius: 3.4rem;
+    text-transform: uppercase;
+    border: 0;
+    outline: 0;
+    opacity: .9;
+    transition: all 0.1s ease 0s;
+}
+
+.button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.button.is-green {
+    background-color: var(--light-green);
+    color: var(--main-font-color);
+}
+
+.app {
+    background: linear-gradient(to bottom, #7D182F, #100206);
+    height: 100%;
+}
+
+/*track-bar styles*/
+.track-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #000000;
+    transition: all 0.1s ease 0s;
+}
+
+.track-bar__fill {
+    height: 6px;
+    width: 0%;
+    background-color: var(--light-green);
+
+}
+
+.player {
+    display: flex;
+    height: 100vh;
+}
+
+.player__header {
+    flex: 1;
+    padding: 1.4rem;
+}
+
+.player__image {
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.player__details {
+    text-align: center;
+}
+
+.player__name {
+    color: var(--main-font-color);
+}
+
+.player__count-wrapper {
+    color: var(--secondary-font-color);
+    text-transform: uppercase;
+}
+
+.player__trigger {
+    margin: 1.4rem 0;
+}
+
+.player__body {
+    flex: 2;
+    padding: 1.4rem 0;
+}
+
+.playlist {
+    list-style-type: none;
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.playlist__song {
+    display: flex;
+    padding: 0.78rem 1rem;
+    transition: all 0.3s ease 0s;
+}
+
+.playlist__song:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.playlist__song--active {
+    color: var(--light-green);
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.playlist__song--active div {
+    color: inherit;
+}
+
+
+.play-pause {
+    color: var(--main-font-color);
+    margin-right: 20px;
+}
+
+.playlist__song-name {
+    color: var(--main-font-color);
+}
+
+.playlist__song-artist {
+    color: var(--secondary-font-color);
+}
+
+.playlist__song-duration {
+    margin-left: auto;
+    color: var(--secondary-font-color);
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .player {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
